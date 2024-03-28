@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators" : true,
+    "baseUrl": ".",
+    "paths": {
+      "@typechains":["./typechain-types"],
+      "@constants":["./constants"],
+      "@constants/*":["./constants/*"],
+      "@lib/*":["./scripts/lib/*"],
+      "@test/*":["./test/*"],
+    }
+  },
+  "include": ["./hardhat.config.ts", "./scripts", "./test", "./typechain-types", "deploy_scripts", "./constants"],
+  "files": ["./hardhat.config.ts"]
+}

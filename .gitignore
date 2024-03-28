@@ -1,0 +1,24 @@
+# Common
+node_modules
+coverage
+coverage.json
+yarn-error.log
+
+# Env 정보
+env/*
+!env/.example.env
+# !env/.hardhat.env # uncomment this line to include hardhat env file in your git repo
+
+# 로컬 환경 컨트랙트 배포 파일
+deployments/hardhat
+deployments/localhost
+deployments/hardhat.json
+
+# 하드햇 생성 데이터
+artifacts
+cache
+typechain-types
+
+# 기타
+.DS_Store
+.openzeppelin/unknown-1337.json
